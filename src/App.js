@@ -1,23 +1,23 @@
 import React from 'react';
 import './App.css';
-import {Route, Switch} from 'react-router-dom';
-import {NotFoundPage} from "./components/NotFoundPage";
-import {Homepage} from "./components/Homepage";
+import { Route, Switch } from 'react-router-dom';
+import { NotFoundPage } from './components/NotFoundPage';
+import { Homepage } from './components/Homepage';
 
 
 function App() {
   return (
-    //Header
+  // Header
 
-    //Main
+    // Main
     <div className="App">
       <Switch>
-        <Route path='/' exact component={Homepage}/>
-        <Route component={NotFoundPage}/>
+        <Route path="/" exact component={Homepage} />
+        <Route component={NotFoundPage} />
       </Switch>
     </div>
 
-    //Footer
+  // Footer
   );
 }
 

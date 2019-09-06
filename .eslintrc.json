@@ -1,0 +1,149 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb-base",
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:fp/recommended",
+        "plugin:jest/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "import",
+        "react",
+        "jsx-a11y",
+        "fp"
+    ],
+    "rules": {
+    "linebreak-style": 0,
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "max-len": [
+        "error",
+        140,
+        2,
+        {
+            "ignoreUrls": true,
+            "ignoreComments": false,
+            "ignoreRegExpLiterals": true,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true
+        }
+    ],
+    "import/no-extraneous-dependencies": [
+        "error",
+        {
+            "devDependencies": [
+                "**/*.test.js",
+                "**/*.spec.js",
+                "/src/stories/**/*.js",
+                "/src/utils/test/**/*.js",
+                "/src/setupTests.js"
+            ],
+            "peerDependencies": true
+        }
+    ],
+    "no-console": "off",
+    "operator-linebreak": [
+        "error",
+        "after",
+        {
+            "overrides": {
+                "?": "before",
+                ":": "before"
+            }
+        }
+    ],
+    "comma-dangle": [
+        "error",
+        {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+            "functions": "always-multiline"
+        }
+    ],
+    "arrow-parens": [
+        "error",
+        "as-needed"
+    ],
+    "no-unused-vars": [
+        "error",
+        {
+            "argsIgnorePattern": "props|prevState|prevProps"
+        }
+    ],
+    "class-methods-use-this": [
+        "error",
+        {
+            "exceptMethods": [
+                "componentDidMount",
+                "getSnapshotBeforeUpdate",
+                "shouldComponentUpdate",
+                "render"
+            ]
+        }
+    ],
+    "function-paren-newline": [
+        "error",
+        "consistent"
+    ],
+    "no-param-reassign": [
+        "error",
+        {
+            "props": true,
+            "ignorePropertyModificationsFor": [
+                "instance"
+            ]
+        }
+    ],
+    "no-underscore-dangle": [
+        "error",
+        {
+            "allow": [
+                "_369",
+                "_258",
+                "_4710"
+            ]
+        }
+    ],
+    "import/prefer-default-export": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "fp/no-unused-expression": [
+        "off"
+    ],
+    "fp/no-let": [
+        "off"
+    ],
+    "fp/no-class": [
+        "off"
+    ],
+    "fp/no-this": [
+        "off"
+    ],
+    "fp/no-nil": [
+        "off"
+    ],
+    "fp/no-get-set": [
+        "off"
+    ],
+    "fp/no-mutation": [
+        "off"
+    ]
+}
+}
